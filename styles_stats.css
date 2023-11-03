@@ -1,0 +1,104 @@
+* {
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+img {
+    display: block;
+    max-width: 100%;
+
+
+}
+
+body {
+    background-color:hsl(233, 47%, 7%);
+    font-size: 15px;
+    color: white;
+    font-family:'Lexend Deca' sans-serif;
+
+
+
+}
+
+.container {
+    background-color:  hsl(244, 38%, 16%);
+    margin: 10vh auto;
+    width: 90%;
+    min-height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.content p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+h1 {
+    font-family: 'Inter', sans-serif;
+
+}
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.content {
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    font-family: 'Inter', sans-serif;
+
+}
+.stats {
+    
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.stats-component p:first-child {
+    font-size: 32px;
+}
+.stats-component p:last-child {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.image-container { 
+    position: relative;
+
+}
+.image-container::before {
+    content:"";
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: hsl(277, 64%, 61%, 0.5); /* Change the color and opacity needed */
+}
+
+@media screen and (min-width: 800px) { 
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 70%;
+        margin: 20vh auto;
+        
+    }  
+    .content {
+        width: 50%;
+        
+        text-align: left;
+    }
+.stats {
+    flex-direction: row;  
+    }
+
+}
